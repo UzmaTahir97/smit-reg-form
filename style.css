@@ -1,0 +1,272 @@
+.parent-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300vh;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-background {
+    position: relative;
+    height: 100vh;
+    width : 100vw;
+    text-align: center;
+}
+
+.header-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-image: url("https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -2; 
+  
+    
+}
+
+div.SMIT-png  {
+    position: absolute;
+    top: 3px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 530px;
+    z-index: -2;  
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+  .facebook-icon ,.insta-icon ,.youtube-icon{
+      margin: 12px;
+  }
+  button{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #66b0e9; 
+      border: 2px solid #0d6db7;
+      background-color: transparent;
+      padding: 7px;
+      border-radius: 25px;
+  }
+  a:link{
+      text-decoration: none;
+      text-align: center;
+  }
+
+  span{
+      font-size: 16px;
+      margin-left: 5px;
+      margin-right: 15px;
+  }
+  .svg{
+      margin-left: 15px;
+  }
+  
+  .info-container{
+      line-height: 4.5em;
+  }
+
+  .admin-container{
+    margin-bottom: 4px;
+   color: #66b0e9; 
+   display: inline;
+   line-height: 2.5em;
+ }
+
+.label-id , .label-roll-number{
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+} 
+
+#id , #roll-number{
+    width: 100%;
+    border: 2px solid green;
+    padding: 18px;
+    border-radius: 7px;
+    font-size: 15px;
+    margin: 15px;
+}
+
+#idCardForm , #ResultsbtnForm{
+    text-align: center;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    background: white;
+    padding: 5px;
+    width: 500px;
+}
+
+ .download-btn{
+    color: green;
+ }
+
+#toggle ,  #to-do ,#regestration{
+    display: none;  
+}
+
+.submit-btn , .search-btn{
+    width: 108%;
+    color: white;
+    background-color: #0d6db7;
+    border-radius: 7px;
+    padding: 18px;
+    font-size: 15px;
+    margin-left: 13px;
+}
+a:visited{
+    color: #0d6db7;
+}
+
+.Results-btn{
+    color: green;
+}
+.download-btn ,.Results-btn ,.Registration-btn{
+   border: 2px solid  gainsboro;
+   padding: 12px;
+   background-color: whitesmoke;
+   cursor: pointer;
+   margin: 2px;
+  
+}
+.Registration-btn{
+    color: green;
+   
+}
+
+#RegistrationbtnForm{ 
+    position: absolute;
+     top: 190%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin-top: 20px;
+    background: white;
+    padding: 5px;
+    display: flex; 
+    justify-content: space-around; 
+    width: 90%;
+    flex-direction: column;
+    font-size: 19px;
+    line-height: 3;
+ 
+}
+
+.top{
+    display: flex;
+}
+.RegistrationbtnForm-child{
+
+   flex: 1;
+   text-align:left;
+   width: 35%;
+}
+
+
+#CNIC ,#Date-of-Birth ,#Full-Name ,#Father-Name ,#Father-CNIC  ,#E-mail ,#Phone{
+    border: 2px solid green;
+    padding: 18px;
+    border-radius: 7px;
+    font-size: 15px;
+     width: 90%;
+}
+
+#Select-course-or-event ,#Select-your-computer-proficiency ,#Select-country  ,#Select-city ,#Select-gender {
+
+    border: 2px solid green;
+    padding: 18px;
+    border-radius: 7px;
+    font-size: 15px; 
+    width: 96%;
+   
+}
+
+.full-width-child{
+    text-align: left; 
+    
+ }
+
+ #Address {
+    width: 95%;
+    border: 2px solid green;
+    padding: 18px;
+    border-radius: 7px;
+    font-size: 19px; 
+  
+ }
+ #Last-qualification ,#Do-you-have-a-Laptop{
+    width: 98%;
+    border: 2px solid green;
+    padding: 18px;
+    border-radius: 7px;
+    font-size: 19px; 
+ }
+ .upload-box{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: justify;
+    border: 2px dashed gray;
+    width: 2%;
+    padding: 50px; 
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    margin-right: 20px;
+  } 
+  .buttonfile{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    text-align: justify;
+    width: 27%;
+    height: 20%;
+    line-height: 1.3;
+     margin-bottom: 30px;  
+     color: black;
+ } 
+ input[type="file"] {
+    display: none;
+}
+
+.instructions{
+    line-height: 1.2;
+    color: black;
+    margin: 28px 0px;
+}
+
+.captcha-png{
+    height: 250px;
+    width: 800px;
+    text-align: left;
+}
+
+.last-button{
+    width: 100%;
+    color: white;
+    background-color: #0d6db7;
+    border-radius: 7px;
+    padding: 18px;
+    font-size: 15px;
+}
+
+    
